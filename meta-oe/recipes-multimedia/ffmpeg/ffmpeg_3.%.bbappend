@@ -233,7 +233,6 @@ EXTRA_FFCONF = " \
     --disable-bsfs \
     --enable-libbluray \
     --enable-protocol=bluray \
-    --enable-librtmp \
     --pkg-config="pkg-config" \
     --disable-debug \
     --extra-cflags="-ffunction-sections -fdata-sections -fno-aggressive-loop-optimizations" \
