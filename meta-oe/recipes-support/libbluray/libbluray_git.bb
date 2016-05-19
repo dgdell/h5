@@ -15,8 +15,8 @@ inherit gitpkgv autotools-brokensep pkgconfig
 #PV = "v0.9.3+git${SRCPV}"
 #PKGV = "v0.9.3+git${GITPKGV}"
 
-PV = "v0.9.2:
-PKGV = "v0.9.3"
+PV = "v0.9.2"
+PKGV = "v0.9.2"
 
 #S="${WORKDIR}/git"
 S="${WORKDIR}"
