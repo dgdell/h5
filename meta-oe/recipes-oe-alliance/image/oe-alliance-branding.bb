@@ -14,6 +14,7 @@ SRCREV = "${AUTOREV}"
 PV = "5.2+git${SRCPV}"
 PKGV = "5.2+git${GITPKGV}"
 PR = "r${DATETIME}"
+PR[vardepsexclude] = "DATETIME"
 
 SRC_URI="git://github.com/oe-alliance/branding-module.git;protocol=git"
 
