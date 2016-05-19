@@ -4,23 +4,23 @@ include conf/machine/include/build-extras.inc
 BRAND_OEM = "broadmedia"
 
 MACHINE_NAME = "\
-${@base_contains('MACHINEBUILD', 'mbtwinplus', 'Premium Twin Plus' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf3038', 'SF3038' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbtwinplus', 'Premium Twin Plus' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf3038', 'SF3038' , '', d)}\
 "
 
 MACHINE_BRAND = "\
-${@base_contains('MACHINEBUILD', 'mbtwinplus', 'Miraclebox' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf3038', 'Octagon' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbtwinplus', 'Miraclebox' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf3038', 'Octagon' , '', d)}\
 "
 
 IMAGEDIR ?= "\
-${@base_contains('MACHINEBUILD', 'mbtwinplus', 'miraclebox/twinplus' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbtwinplus', 'miraclebox/twinplus' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
 "
 
 MACHINE_DRIVER = "\
-${@base_contains('MACHINEBUILD', 'mbtwinplus', 'twinplus' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbtwinplus', 'twinplus' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
 "
 
 MTD_KERNEL = "mtd1"
@@ -40,7 +40,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
     "
 
 MACHINE_EXTRA_RRECOMMENDS = " \
-    ${@base_contains("GST_VERSION", "1.0", "gstreamer1.0-plugin-dvbmediasink", "gst-plugin-dvbmediasink", d)} \
+    ${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-plugin-dvbmediasink", "gst-plugin-dvbmediasink", d)} \
     "
 
 include conf/machine/include/autoload-filesystems.inc
