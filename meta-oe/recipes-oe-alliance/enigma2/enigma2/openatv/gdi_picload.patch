@@ -1,6 +1,6 @@
---- ./lib/gdi/picload.cpp	2016-05-20 11:52:00.833771935 +0200
-+++ ./lib/gdi/picload.cpp	2016-05-20 11:52:32.218101277 +0200
-@@ -609,7 +609,7 @@
+--- ./lib/gdi/picload.cpp	2016-05-20 14:10:13.782782806 +0200
++++ ./lib/gdi/picload.cpp	2016-05-20 14:10:50.767231830 +0200
+@@ -479,7 +479,7 @@
  	int cmaps;
  	int extcode;
  
@@ -9,7 +9,7 @@
  	if (gft == NULL)
  		return;
  	do
-@@ -680,11 +680,11 @@
+@@ -569,11 +569,11 @@
  	}
  	while (rt != TERMINATE_RECORD_TYPE);
  
@@ -17,7 +17,7 @@
 +	DGifCloseFile(gft, NULL);
  	return;
  ERROR_R:
- 	eDebug("[Picload] <Error gif>");
+ 	eDebug("[ePicLoad] <Error gif>");
 -	DGifCloseFile(gft);
 +	DGifCloseFile(gft, NULL);
  }
