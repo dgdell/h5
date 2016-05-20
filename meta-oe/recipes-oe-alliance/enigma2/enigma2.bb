@@ -259,6 +259,7 @@ SRC_URI_append_openxta = " \
 
 SRC_URI_append_openbh = " \
     file://tuxbox_fix_DVB_API_VERSION_check_for_gcc5.patch \
+    file://gdi_picload.patch \
     "
 
 S = "${WORKDIR}/git"

@@ -1,0 +1,25 @@
+--- ./lib/gdi/picload.cpp	2016-05-20 08:36:44.382291023 +0200
++++ ./lib/gdi/picload.cpp	2016-05-20 08:37:14.158591824 +0200
+@@ -609,7 +609,7 @@
+ 	int cmaps;
+ 	int extcode;
+ 
+-	gft = DGifOpenFileName(filepara->file);
++	gft = DGifOpenFileName(filepara->file, NULL);
+ 	if (gft == NULL)
+ 		return;
+ 	do
+@@ -680,11 +680,11 @@
+ 	}
+ 	while (rt != TERMINATE_RECORD_TYPE);
+ 
+-	DGifCloseFile(gft);
++	DGifCloseFile(gft, NULL);
+ 	return;
+ ERROR_R:
+ 	eDebug("[Picload] <Error gif>");
+-	DGifCloseFile(gft);
++	DGifCloseFile(gft, NULL);
+ }
+ 
+ //---------------------------------------------------------------------------------------------
