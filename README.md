@@ -1,4 +1,4 @@
 oe-alliance-core
 ================
 
-The openembedded alliance core.
+PERIODICALLY updated openembedded alliance core.
