@@ -66,6 +66,9 @@ ${@base_contains('MACHINEBUILD', 'e4hdhybrid', 'e4hd' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'singleboxlcd', 'redeagle/singleboxlcd' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'sf208', 'sf208' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'sf228', 'sf228' , '', d)}\
+<<<<<<< HEAD
+>>>>>>> 3.4
+=======
 >>>>>>> 3.4
 "
 
