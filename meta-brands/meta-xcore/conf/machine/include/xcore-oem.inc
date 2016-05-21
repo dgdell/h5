@@ -77,8 +77,13 @@ MACHINE_EXTRA_RRECOMMENDS += " \
 
 include conf/machine/include/autoload-filesystems.inc
 
+<<<<<<< HEAD
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3 --with-vb6 --with-vb8 --with-spark \
     ${@bb.utils.contains('MACHINEBUILD', 'osminiplus', '--with-h265' , '', d)} \
+=======
+DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3  \
+    ${@base_contains('MACHINEBUILD', 'osminiplus', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
+>>>>>>> 3.4
 "
 
 TARGET_ARCH = "mipsel"
