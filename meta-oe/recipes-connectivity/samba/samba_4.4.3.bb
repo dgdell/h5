@@ -79,7 +79,8 @@ EXTRA_OECONF += "--enable-fhs \
                  --with-cluster-support \
                  --with-profiling-data \
                  --with-libiconv=${STAGING_DIR_HOST}${prefix} \
-                "
+                 --with-libsmbclient \
+		"
 DISABLE_STATIC = ""
 
 LDFLAGS += "-Wl,-z,relro,-z,now"
@@ -123,7 +124,7 @@ do_install_append() {
     install -m644 packaging/systemd/samba.sysconfig ${D}${sysconfdir}/sysconfig/samba
 }
 
-PACKAGES += "${PN}-python ${PN}-python-dbg ${PN}-pidl libwinbind libwinbind-dbg libwinbind-krb5-locator"
+PACKAGES += "${PN}-python ${PN}-python-dbg ${PN}-pidl libwinbind libwinbind-dbg libwinbind-krb5-locator smbclient"
 PACKAGES =+ "libwbclient libnss-winbind winbind winbind-dbg libsmbsharemodes \
              libsmbclient libsmbclient-dev lib${PN}-base ${PN}-base"
 
