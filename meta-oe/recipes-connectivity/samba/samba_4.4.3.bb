@@ -79,7 +79,6 @@ EXTRA_OECONF += "--enable-fhs \
                  --with-cluster-support \
                  --with-profiling-data \
                  --with-libiconv=${STAGING_DIR_HOST}${prefix} \
-                 --with-libsmbclient \
 		"
 DISABLE_STATIC = ""
 
