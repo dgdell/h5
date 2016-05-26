@@ -1,0 +1,10 @@
+--- ktutil_funcs.c	2015-05-09 01:27:02.000000000 +0200
++++ ktutil_funcs.c1	2016-05-25 15:15:18.776998478 +0200
+@@ -66,6 +66,7 @@
+ {
+     krb5_kt_list lp, prev;
+     int i;
++    prev = 0;
+ 
+     for (lp = *list, i = 1; lp; prev = lp, lp = lp->next, i++) {
+         if (i == idx) {

@@ -1,0 +1,11 @@
+--- src/plugins/preauth/pkinit/pkinit_crypto_openssl.c	2016-05-25 15:06:37.000000000 +0200
++++ src/plugins/preauth/pkinit/pkinit_crypto_openssl.c	2016-05-25 15:07:27.663779900 +0200
+@@ -3593,7 +3593,7 @@
+ {
+     CK_ULONG i, r;
+     unsigned char *cp;
+-    size_t label_len;
++    size_t label_len = 0;
+     CK_ULONG count = 0;
+     CK_SLOT_ID_PTR slotlist;
+     CK_TOKEN_INFO tinfo;

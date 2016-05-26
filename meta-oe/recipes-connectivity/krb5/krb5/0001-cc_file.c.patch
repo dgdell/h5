@@ -1,0 +1,11 @@
+--- src/lib/krb5/cc_file.c	2016-05-25 14:56:11.876274506 +0200
++++ src/lib/krb5/cc_file.c	2016-05-25 14:57:00.276813526 +0200
+@@ -401,7 +401,7 @@
+ {
+     krb5_error_code ret;
+     struct k5buf buf;
+-    size_t maxsize;
++    size_t maxsize = 0;
+ 
+     *princ = NULL;
+     k5_cc_mutex_assert_locked(context, &((fcc_data *)id->data)->lock);
