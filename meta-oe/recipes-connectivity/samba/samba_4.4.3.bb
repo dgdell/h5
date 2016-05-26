@@ -125,7 +125,7 @@ do_install_append() {
 
 PACKAGES += "${PN}-python ${PN}-python-dbg ${PN}-pidl libwinbind libwinbind-dbg libwinbind-krb5-locator smbclient"
 PACKAGES =+ "libwbclient libnss-winbind winbind winbind-dbg libsmbsharemodes \
-             libsmbclient libsmbclient-dev lib${PN}-base ${PN}-base"
+             libsmbclient libsmbclient-dev lib${PN}-base ${PN}-base smbclient"
 
 RDEPENDS_${PN} += "${PN}-base"
 
@@ -266,6 +266,7 @@ FILES_libwbclient = "${libdir}/libwbclient.so.* \
 FILES_libsmbsharemodes = "${libdir}/libsmbsharemodes.so.*"
 FILES_libsmbclient = "${libdir}/libsmbclient.so.*"
 FILES_libsmbclient-dev = "${libdir}/libsmbclient.so ${includedir}"
+FILES_smbclient = "${bindir}/smbclient"
 FILES_winbind = "${sbindir}/winbindd \
                  ${bindir}/wbinfo \
                  ${bindir}/ntlm_auth \
