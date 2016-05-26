@@ -123,7 +123,7 @@ do_install_append() {
     install -m644 packaging/systemd/samba.sysconfig ${D}${sysconfdir}/sysconfig/samba
 }
 
-PACKAGES += "${PN}-python ${PN}-python-dbg ${PN}-pidl libwinbind libwinbind-dbg libwinbind-krb5-locator smbclient"
+PACKAGES += "${PN}-python ${PN}-python-dbg ${PN}-pidl libwinbind libwinbind-dbg libwinbind-krb5-locator"
 PACKAGES =+ "libwbclient libnss-winbind winbind winbind-dbg libsmbsharemodes \
              libsmbclient libsmbclient-dev lib${PN}-base ${PN}-base smbclient"
 
