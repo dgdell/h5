@@ -1,0 +1,11 @@
+--- ./src/Makefile	2016-05-25 13:21:40.725421415 +0200
++++ ./src/Makefile	2016-05-25 13:20:51.936875668 +0200
+@@ -161,7 +161,7 @@
+ 
+ CFLAGS =  -Os -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/work/mips32el-oe-linux/krb5/1.13.2-r0=/usr/src/debug/krb5/1.13.2-r0 -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/sysroots/vusolose=  -DDESTRUCTOR_ATTR_WORKS=1 -I/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/sysroots/vusolose/usr/include/et
+ CXXFLAGS =  -Os -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/work/mips32el-oe-linux/krb5/1.13.2-r0=/usr/src/debug/krb5/1.13.2-r0 -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/dst1/devel/oe-alliance/build-enviroment/builds/openatv/release/vusolose/tmp/sysroots/vusolose=  -fvisibility-inlines-hidden
+-WARN_CFLAGS =  -Wall -Wcast-align -Wshadow -Wmissing-prototypes -Wno-format-zero-length -Woverflow -Wstrict-overflow -Wmissing-format-attribute -Wmissing-prototypes -Wreturn-type -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -Wunknown-pragmas -Wsign-compare
++WARN_CFLAGS =  -Wall -Wcast-align -Wshadow -Wmissing-prototypes -Wno-format-zero-length -Woverflow -Wstrict-overflow -Wmissing-format-attribute -Wmissing-prototypes -Wreturn-type -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-variable -Wunused-value -Wunknown-pragmas -Wsign-compare -Werror=uninitialized -Werror=pointer-arith -Werror=declaration-after-statement -Werror-implicit-function-declaration
+ WARN_CXXFLAGS =  -Wall -Wcast-align -Wshadow
+ PTHREAD_CFLAGS = -pthread
+ PTHREAD_LIBS = 
