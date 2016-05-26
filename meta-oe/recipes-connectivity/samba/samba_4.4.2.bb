@@ -18,6 +18,30 @@ SRC_URI = "${SAMBA_MIRROR}/stable/samba-${PV}.tar.gz \
            file://21-add-config-option-without-valgrind.patch \
            file://0006-avoid-using-colon-in-the-checking-msg.patch \
            file://volatiles.03_samba \
+           file://100-configure_fixes.patch;patchdir=.. \
+           file://110-multicall.patch;patchdir=.. \
+           file://111-owrt_smbpasswd.patch;patchdir=.. \
+           file://120-add_missing_ifdef.patch;patchdir=.. \
+           file://200-remove_printer_support.patch;patchdir=.. \
+           file://210-remove_ad_support.patch;patchdir=.. \
+           file://220-remove_services.patch;patchdir=.. \
+           file://230-remove_winreg_support.patch;patchdir=.. \
+           file://240-remove_dfs_api.patch;patchdir=.. \
+           file://250-remove_domain_logon.patch;patchdir=.. \
+           file://260-remove_samr.patch;patchdir=.. \
+           file://270-remove_registry_backend.patch;patchdir=.. \
+           file://280-strip_srvsvc.patch;patchdir=.. \
+           file://290-remove_lsa.patch;patchdir=.. \
+           file://300-assert_debug_level.patch;patchdir=.. \
+           file://310-remove_error_strings.patch;patchdir=.. \
+           file://320-debug_level_checks.patch;patchdir=.. \
+           file://330-librpc_default_print.patch;patchdir=.. \
+           file://smb.conf \
+           file://init.samba \
+           file://upgrade \
+           file://pam.samba \
+           file://users.map \
+           file://smbpasswd \
           "
 
 SRC_URI[md5sum] = "03a65a3adf08ceb1636ad59d234d7f9d"

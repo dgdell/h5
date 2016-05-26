@@ -17,7 +17,6 @@ RDEPENDS_packagegroup-base-smbfs += "\
 
 RDEPENDS_packagegroup-base-smbfs-client = "\
     packagegroup-base-smbfs \
-    smbclient \
     "
 
 RDEPENDS_packagegroup-base-smbfs-server = "\
