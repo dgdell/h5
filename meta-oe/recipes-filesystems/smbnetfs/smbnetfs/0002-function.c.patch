@@ -1,0 +1,11 @@
+--- git/src/function.c	2016-05-26 11:53:56.130820618 +0200
++++ git/src/function.c	2016-05-26 11:53:04.000000000 +0200
+@@ -9,7 +9,7 @@
+ #include <sys/statvfs.h>
+ #include <time.h>
+ #include <pthread.h>
+-#include <libsmbclient.h>
++#include <samba-4.0/libsmbclient.h>
+ #ifdef HAVE_SETXATTR
+   #include <sys/xattr.h>
+ #endif

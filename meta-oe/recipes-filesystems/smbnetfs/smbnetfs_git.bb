@@ -19,6 +19,7 @@ SRCREV = "ace1c519d45fe488b9b7e6cc77a2bcadb6c83464"
 SRC_URI = "git://smbnetfs.git.sourceforge.net/gitroot/smbnetfs/smbnetfs;branch=master \
            file://configure.patch \
 	   file://0001-smb_conn_srv.c.patch \
+	   file://0002-function.c.patch \
 "
 
 PACKAGECONFIG ??= ""
