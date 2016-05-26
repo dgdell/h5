@@ -1,0 +1,11 @@
+--- git/src/main.c	2016-05-26 12:04:37.000000000 +0200
++++ git/src/main.c	2016-05-26 12:06:03.767117376 +0200
+@@ -11,7 +11,7 @@
+ #include <sys/socket.h>
+ #include <sys/wait.h>
+ #include <pthread.h>
+-#include <libsmbclient.h>
++#include <samba-4.0/libsmbclient.h>
+ #include <pwd.h>
+ 
+ #include "common.h"
