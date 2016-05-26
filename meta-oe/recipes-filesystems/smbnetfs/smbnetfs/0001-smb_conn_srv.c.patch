@@ -1,5 +1,5 @@
---- src/smb_conn_srv.c	2016-05-26 10:05:25.000000000 +0200
-+++ src/smb_conn_srv.c	2016-05-26 11:35:18.734139360 +0200
+--- git/src/smb_conn_srv.c	2016-05-26 10:05:25.000000000 +0200
++++ git/src/smb_conn_srv.c	2016-05-26 11:35:18.734139360 +0200
 @@ -9,7 +9,7 @@
  #include <sys/uio.h>
  #include <sys/mman.h>
