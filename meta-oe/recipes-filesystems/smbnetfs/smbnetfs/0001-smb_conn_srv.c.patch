@@ -1,0 +1,11 @@
+--- src/smb_conn_srv.c	2016-05-26 10:05:25.000000000 +0200
++++ src/smb_conn_srv.c	2016-05-26 11:35:18.734139360 +0200
+@@ -9,7 +9,7 @@
+ #include <sys/uio.h>
+ #include <sys/mman.h>
+ #include <sys/select.h>
+-#include <libsmbclient.h>
++#include <samba-4.0/libsmbclient.h>
+ 
+ #include "charset.h"
+ #include "smb_conn_proto.h"
