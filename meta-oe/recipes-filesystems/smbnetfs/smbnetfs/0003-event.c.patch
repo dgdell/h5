@@ -1,0 +1,11 @@
+--- git/src/event.c	2016-05-26 11:57:50.000000000 +0200
++++ git/src/event.c	2016-05-26 12:00:14.263144063 +0200
+@@ -3,7 +3,7 @@
+ #include <stdlib.h>
+ #include <signal.h>
+ #include <pthread.h>
+-#include <libsmbclient.h>
++#include <samba-4.0/libsmbclient.h>
+ #include <fuse/fuse.h>
+ 
+ #include "common.h"
