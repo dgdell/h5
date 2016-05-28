@@ -48,13 +48,8 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-gmailreader-oe2.0_1.3_all.ipk \
     enigma2-plugin-extensions-googlenewsreader_1.0_mips32el.ipk \
     enigma2-plugin-extensions-hdmitest_0.4_mipsel.ipk \
-<<<<<<< HEAD
-    enigma2-plugin-extensions-hetweer_3.0_all.ipk \
-    enigma2-plugin-extensions-isettinge2-3.3.3-oe2.0-${@bb.utils.contains("TARGET_ARCH", "sh4", "sh4" , "mips32el", d)}.ipk \
-=======
     enigma2-plugin-extensions-hetweer_3.1_all.ipk \
-    enigma2-plugin-extensions-isettinge2-3.3.3-oe2.0-${@base_contains("TARGET_ARCH", "sh4", "sh4" , "mips32el", d)}.ipk \
->>>>>>> f8c2a2d04056bcc8b523b84c2d5b29957e477838
+    enigma2-plugin-extensions-isettinge2-3.3.3-oe2.0-${@bb.utils.contains("TARGET_ARCH", "sh4", "sh4" , "mips32el", d)}.ipk \
     enigma2-plugin-extensions-kicker_3.4rc4_all.ipk \
     enigma2-plugin-extensions-kino_1.6rc9_all.ipk \
     enigma2-plugin-extensions-kodidirect_3.0_r0_all.ipk \
@@ -62,15 +57,9 @@ THIRDPARTY_PLUGINS = " \
     enigma2-plugin-extensions-mediainfo_3.0.0_all.ipk \
     enigma2-plugin-extensions-mediaportal-wallicons \
     enigma2-plugin-extensions-mediastream_6.0_all.ipk \
-<<<<<<< HEAD
-    enigma2-plugin-extensions-moviebrowser_3.6rc7_all.ipk \
-    enigma2-plugin-extensions-mp3browser_1.9c8_mips32el.ipk \
-    ${@bb.utils.contains('MACHINE_BRAND', 'Vu+', '' , 'enigma2-plugin-extensions-openopera_1.0-r0_mips32el.ipk', d)} \
-=======
     enigma2-plugin-extensions-moviebrowser_3.6rc8_all.ipk \
     enigma2-plugin-extensions-mp3browser_1.9c9_mips32el.ipk \
-    ${@base_contains('MACHINE_BRAND', 'Vu+', '' , 'enigma2-plugin-extensions-openopera_1.0-r0_mips32el.ipk', d)} \
->>>>>>> f8c2a2d04056bcc8b523b84c2d5b29957e477838
+    ${@bb.utils.contains('MACHINE_BRAND', 'Vu+', '' , 'enigma2-plugin-extensions-openopera_1.0-r0_mips32el.ipk', d)} \
     enigma2-plugin-extensions-opkg-tools_1.3_mipsel.ipk \
     enigma2-plugin-extensions-oscamstatusview_0.7rc1_mips32el.ipk \
     enigma2-plugin-extensions-piconmanager_2.2-20150329-r0_all.ipk \
