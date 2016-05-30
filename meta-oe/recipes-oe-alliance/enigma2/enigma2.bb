@@ -274,6 +274,10 @@ SRC_URI_append_openmips = " \
     file://gdi_picload.patch \
     "
 
+SRC_URI_append_openspa = " \
+    file://gdi_picload.patch \
+    "
+
 S = "${WORKDIR}/git"
 
 FILES_${PN} += "${datadir}/keymaps"
