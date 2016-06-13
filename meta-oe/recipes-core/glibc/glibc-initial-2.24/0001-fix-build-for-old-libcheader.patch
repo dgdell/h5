@@ -1,7 +1,19 @@
-diff -Nur a/configure b/configure
 --- libc/sysdeps/unix/sysv/linux/configure	2013-11-15 21:00:52.197435355 +0100
 +++ libc/sysdeps/unix/sysv/linux/configure	2013-11-15 21:02:05.985436648 +0100
+<<<<<<< HEAD:meta-oe/recipes-core/glibc/glibc-initial-2.24/0001-fix-build-for-old-libcheader.patch
 @@ -118,7 +118,7 @@
+=======
+@@ -28,7 +28,7 @@
+ if ac_fn_c_try_compile "$LINENO"; then :
+   libc_cv_linux320='3.2.0 or later'
+ else
+-  libc_cv_linux320='missing or too old!'
++  libc_cv_linux320='3.2.0 or later'
+ fi
+ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+ fi
+@@ -87,7 +87,7 @@
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b:meta-oe/recipes-core/glibc/glibc-initial-2.24/0001-fix-build-for-old-libcheader.patch
  if ac_fn_c_try_compile "$LINENO"; then :
    libc_minimum_kernel=ok
  else

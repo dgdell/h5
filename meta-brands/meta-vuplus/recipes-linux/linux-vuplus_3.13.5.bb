@@ -35,6 +35,10 @@ SRC_URI = "http://archive.vuplus.com/download/kernel/stblinux-${KV}.tar.bz2 \
     file://kernel-add-support-for-gcc-5.patch \
     file://rtl8712-fix-warnings.patch \
     ${@bb.utils.contains("MACHINE_FEATURES", "dvbproxy", "file://linux_dvb_adapter.patch;patch=1;pnum=1", "", d)} \
+<<<<<<< HEAD
+=======
+    file://kernel-add-support-for-gcc6.patch \
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
     "
 
 SRC_URI_append_vuduo2 = "file://brcm_s3_wol.patch;patch=1;pnum=1 "
@@ -79,3 +83,6 @@ pkg_postinst_kernel-image () {
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install

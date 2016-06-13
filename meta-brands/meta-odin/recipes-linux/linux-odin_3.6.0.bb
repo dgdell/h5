@@ -47,6 +47,7 @@ SRC_URI += "http://source.mynonpublic.com/download/linux-${PV}.tar.gz \
     file://nfs-max-rwsize-8k.patch \
     file://rtl8712-fix-warnings.patch \
     file://rtl8187se-fix-warnings.patch \
+    file://kernel-add-support-for-gcc6.patch \
     "
 
 S = "${WORKDIR}/linux-${PV}"
@@ -79,3 +80,6 @@ pkg_postinst_kernel-image () {
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install

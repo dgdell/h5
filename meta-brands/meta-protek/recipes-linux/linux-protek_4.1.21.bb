@@ -29,6 +29,7 @@ SRC_URI += "http://source.mynonpublic.com/protek/protek-linux-${PV}-${SRCDATE}.t
     file://fix-proc-cputype.patch \
     file://iosched-slice_idle-1.patch \
     file://tda18271-advertise-supported-delsys.patch \
+    file://kernel-add-support-for-gcc6.patch \
     "
 
 S = "${WORKDIR}/linux-${PV}"
@@ -61,3 +62,6 @@ pkg_postinst_kernel-image () {
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install

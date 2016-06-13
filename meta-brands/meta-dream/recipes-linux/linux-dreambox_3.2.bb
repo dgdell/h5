@@ -42,6 +42,7 @@ SRC_URI = " \
     file://rtl8712-fix-warnings.patch \
     file://fixme-hardfloat.patch \
     file://defconfig \
+    file://kernel-add-support-for-gcc6.patch \
 "
 
 PACKAGES_DYNAMIC = "kernel-*"
@@ -149,3 +150,6 @@ CMDLINE = "${@bb.utils.contains('IMAGE_FSTYPES', 'ubinfi', '${CMDLINE_UBI}', '${
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install

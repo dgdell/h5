@@ -82,8 +82,12 @@ DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3 -
     ${@bb.utils.contains('MACHINEBUILD', 'osminiplus', '--with-h265' , '', d)} \
 =======
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3  \
+<<<<<<< HEAD
     ${@base_contains('MACHINEBUILD', 'osminiplus', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
 >>>>>>> 3.4
+=======
+    ${@bb.utils.contains('MACHINEBUILD', 'osminiplus', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 TARGET_ARCH = "mipsel"

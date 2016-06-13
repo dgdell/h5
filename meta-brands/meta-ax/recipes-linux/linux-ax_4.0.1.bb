@@ -25,6 +25,7 @@ SRC_URI += "http://downloads.newsoftwaredata.com/linux-${PV}.tar.gz \
 	file://sdio-pinmux.patch \
 	file://add-dmx-source-timecode.patch \
 	file://iosched-slice_idle-1.patch \
+    file://kernel-add-support-for-gcc6.patch \
 	"
 
 inherit kernel machine_kernel_pr
@@ -59,3 +60,6 @@ pkg_postinst_kernel-image () {
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install

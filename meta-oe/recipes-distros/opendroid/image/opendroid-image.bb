@@ -7,8 +7,12 @@ MAINTAINER = "openDroid Team"
 require conf/license/license-gplv2.inc
 
 PV = "${IMAGE_VERSION}"
+<<<<<<< HEAD
 PR = "r${DATETIME}"
 PR[vardepsexclude] = "DATETIME"
+=======
+PR = "r${DATE}"
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 IMAGE_INSTALL = "opendroid-base \

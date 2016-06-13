@@ -5,6 +5,9 @@ BRAND_OEM = "ceryon"
 
 MACHINE_NAME = "\
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 ${@bb.utils.contains('MACHINEBUILD', 'twinboxlcd', 'TWINBOX LCD' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mbmicro', 'Premium Micro' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'odin2hybrid', 'ODIN2 Hybrit' , '', d)}\
@@ -12,6 +15,7 @@ ${@bb.utils.contains('MACHINEBUILD', 'odinplus', 'ODIN2 Plus' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'e4hd', 'E4HD' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'e4hdhybrid', 'E4HD HYBRID' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'singleboxlcd', 'SINGLEBOX LCD' , '', d)}\
+<<<<<<< HEAD
 "
 
 MACHINE_BRAND = "\
@@ -42,21 +46,28 @@ ${@base_contains('MACHINEBUILD', 'e4hdhybrid', 'E4HD HYBRID' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'singleboxlcd', 'SINGLEBOX LCD' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'sf208', 'SF208 E2 HD LCD SINGLE' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'sf228', 'SF228 E2 HD LCD TWIN' , '', d)}\
+=======
+${@bb.utils.contains('MACHINEBUILD', 'sf208', 'SF208 E2 HD LCD SINGLE' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf228', 'SF228 E2 HD LCD TWIN' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', '9910lx', '9910LX' , '', d)}\
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 MACHINE_BRAND = "\
-${@base_contains('MACHINEBUILD', 'twinboxlcd', 'RED EAGLE' , '', d)}\
-${@base_contains('MACHINEBUILD', 'mbmicro', 'Miraclebox' , '', d)}\
-${@base_contains('MACHINEBUILD', 'odin2hybrid', 'Opticum' , '', d)}\
-${@base_contains('MACHINEBUILD', 'odinplus', 'Opticum' , '', d)}\
-${@base_contains('MACHINEBUILD', 'e4hd', 'AXAS' , '', d)}\
-${@base_contains('MACHINEBUILD', 'e4hdhybrid', 'AXAS' , '', d)}\
-${@base_contains('MACHINEBUILD', 'singleboxlcd', 'RED EAGLE' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf208', 'OCTAGON' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf228', 'OCTAGON' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'twinboxlcd', 'RED EAGLE' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbmicro', 'Miraclebox' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'odin2hybrid', 'Opticum' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'odinplus', 'Opticum' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'e4hd', 'AXAS' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'e4hdhybrid', 'AXAS' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'singleboxlcd', 'RED EAGLE' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf208', 'OCTAGON' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf228', 'OCTAGON' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', '9910lx', 'Protek' , '', d)}\
 "
 
 IMAGEDIR ?= "\
+<<<<<<< HEAD
 ${@base_contains('MACHINEBUILD', 'twinboxlcd', 'redeagle/twinboxlcd' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'mbmicro', 'miraclebox/micro' , '', d)}\
 ${@base_contains('MACHINEBUILD', 'odin2hybrid', 'odin2/hybrid' , '', d)}\
@@ -70,6 +81,18 @@ ${@base_contains('MACHINEBUILD', 'sf228', 'sf228' , '', d)}\
 >>>>>>> 3.4
 =======
 >>>>>>> 3.4
+=======
+${@bb.utils.contains('MACHINEBUILD', 'twinboxlcd', 'redeagle/twinboxlcd' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'mbmicro', 'miraclebox/micro' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'odin2hybrid', 'odin2/hybrid' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'odinplus', 'odinplus' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'e4hd', 'e4hd' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'e4hdhybrid', 'e4hd' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'singleboxlcd', 'redeagle/singleboxlcd' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf208', 'sf208' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', 'sf228', 'sf228' , '', d)}\
+${@bb.utils.contains('MACHINEBUILD', '9910lx', '9910lx' , '', d)}\
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 MTD_KERNEL = "mtd1"

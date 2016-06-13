@@ -11,6 +11,10 @@ ${@bb.utils.contains('MACHINEBUILD', 'mutant1100', 'HD1100' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant500c', 'HD500C' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant1200', 'HD1200' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vizyonvita', 'Vita' , '', d)}\
+<<<<<<< HEAD
+=======
+${@bb.utils.contains('MACHINEBUILD', 'mutant11', 'HD11' , '', d)}\
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 MACHINE_BRAND = "\
@@ -20,6 +24,10 @@ ${@bb.utils.contains('MACHINEBUILD', 'mutant1500', 'Mut@nt' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant500c', 'Mut@nt' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant1200', 'Mut@nt' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vizyonvita', 'Vizyon' , '', d)}\
+<<<<<<< HEAD
+=======
+${@bb.utils.contains('MACHINEBUILD', 'mutant11', 'Mut@nt' , '', d)}\
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 IMAGEDIR ?= "\
@@ -29,6 +37,10 @@ ${@bb.utils.contains('MACHINEBUILD', 'mutant1500', 'hd1500' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant500c', 'hd500c' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'mutant1200', 'hd1200' , '', d)}\
 ${@bb.utils.contains('MACHINEBUILD', 'vizyonvita', 'hd1100' , '', d)}\
+<<<<<<< HEAD
+=======
+${@bb.utils.contains('MACHINEBUILD', 'mutant11', 'hd11' , '', d)}\
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 MTD_KERNEL = "mtd1"
@@ -57,6 +69,10 @@ include conf/machine/include/autoload-filesystems.inc
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3 \
     ${@bb.utils.contains('MACHINEBUILD', 'mutant1265', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
     ${@bb.utils.contains('MACHINEBUILD', 'mutant1500', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
+<<<<<<< HEAD
+=======
+    ${@base_contains('MACHINEBUILD', 'mutant11', '--with-h265 --with-vb6 --with-vb8 --with-spark' , '', d)} \
+>>>>>>> 7433ddb3f7d5daa5ba9a39ffc7046b21fdeab63b
 "
 
 TARGET_ARCH = "mipsel"

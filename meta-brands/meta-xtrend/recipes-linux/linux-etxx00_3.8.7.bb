@@ -52,6 +52,7 @@ SRC_URI += "http://www.xtrendet.net/linux-${PV}.tar.gz \
     file://rtl8187se-fix-warnings.patch \
     file://em28xx-dvb-enable-LNA-by-default-for-PCTV290e.patch \
     file://zl10353-output-full-range-SNR.patch \
+    file://kernel-add-support-for-gcc6.patch \
     "
 
 S = "${WORKDIR}/linux-${PV}"
@@ -84,3 +85,6 @@ pkg_postinst_kernel-image () {
 
 do_rm_work() {
 }
+
+# extra tasks
+addtask kernel_link_images after do_compile before do_install
